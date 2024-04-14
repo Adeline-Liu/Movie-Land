@@ -51,7 +51,7 @@ const App = () => {
             // .map() transforms each item in an array and returns a new array containing the transformed items
             // inside map, a function is defined that takes each movie object from the movies array as an argument
             // this function is executed for each item in the array
-            <MovieCard movie={movie} />
+            <MovieCard movie={movie} /> // movie is the name of the prop, {movie} is the value of the prop
             // so each movie is passed into MovieCard and gets rendered
           ))}
         </div>

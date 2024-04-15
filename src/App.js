@@ -12,7 +12,11 @@ const API_URL = 'https://www.omdbapi.com?apikey=6fb9896f';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  // we want searchTerm to be a state since When setSearchTerm is called, React updates the searchTerm 
+  // and re-renders any parts of the component using searchTerm
   const [movies, setMovies] = useState([]); // initialize an empty list of movie
+  // movies is a state so When setMovies is called, React updates the movies array 
+  // and re-renders any parts of the component that display movie data
 
   useEffect(() => {
     searchMovies("Batman");

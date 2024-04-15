@@ -12,6 +12,7 @@ const API_URL = 'https://www.omdbapi.com?apikey=6fb9896f';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  // every time a state changes, the involved components will re-render
   // we want searchTerm to be a state since When setSearchTerm is called, React updates the searchTerm 
   // and re-renders any parts of the component using searchTerm
   const [movies, setMovies] = useState([]); // initialize an empty list of movie
